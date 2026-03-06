@@ -1,16 +1,33 @@
-## Hi there 👋
+# Hi 👋 I'm Venkat
 
-<!--
-**Venkat-Entropik/Venkat-Entropik** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Frontend Developer | React | TypeScript
 
-Here are some ideas to get you started:
+## 🚀 About Me
+- 💻 Frontend developer specializing in React
+- ⚡ Interested in performance optimization
+- 🔍 Exploring Open Source
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 🛠 Tech Stack
+- React
+- TypeScript
+- JavaScript
+- Redux Toolkit
+- Chakra UI
+- Git
+- Jest
+- Vitest
+
+## 🌟 Open Source Contributions
+- freeCodeCamp  
+  PR merged: https://github.com/freeCodeCamp/freeCodeCamp/pull/66247
+
+## 📫 Connect with me
+- LinkedIn: https://www.linkedin.com/in/devathoti-venkata-ramana/
+- GitHub: https://github.com/Venkat-Entropik
+
+
+## 📊 GitHub Stats
+
+![Venkat's GitHub stats](https://github-readme-stats.vercel.app/api?username=Venkat-Entropik&show_icons=true)
+
+![Snake animation](https://github.com/platane/snk/raw/output/github-contribution-grid-snake.svg)
