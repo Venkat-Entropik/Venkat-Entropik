@@ -21,6 +21,10 @@ Frontend Developer | React | TypeScript
 - freeCodeCamp  
   PR merged: https://github.com/freeCodeCamp/freeCodeCamp/pull/66247
 
+- Node.js Website
+  PR merged: https://github.com/nodejs/nodejs.org/pull/8710  
+  Description: Improved documentation readability and formatting.
+
 ## 📫 Connect with me
 - LinkedIn: https://www.linkedin.com/in/devathoti-venkata-ramana/
 - GitHub: https://github.com/Venkat-Entropik
