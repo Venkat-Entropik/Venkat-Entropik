@@ -30,7 +30,7 @@
 
 ---
 
-## 🌟 Open Source Contributions
+## 🚀 Open Source Contributions
 
 ### Node.js
 - Improved documentation readability and formatting  
@@ -42,6 +42,9 @@
 ---
 
 ### freeCodeCamp
+
+- freeCodeCamp: Implemented Facebook share feature after workshops to improve user engagement and social sharing.  
+  🔗 https://github.com/freeCodeCamp/freeCodeCamp/pull/66610
 
 **UI Fix**
 - Fixed mobile UI issue where navigation search placeholder text was clipped  
