@@ -1,4 +1,9 @@
 <h1 align="center">Hi 👋, I'm Venkat</h1>
+
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com/?lines=Frontend+Developer;React+%7C+TypeScript+%7C+Open+Source;Building+Clean+UI+%26+Fast+Apps&center=true&width=500&height=45">
+</p>
+
 <h3 align="center">Frontend Developer | React | TypeScript | Open Source Contributor</h3>
 
 ---
@@ -6,74 +11,98 @@
 ## 🚀 About Me
 
 - 💻 Frontend Developer with **2.5+ years of experience**
-- ⚛️ Specializing in **React, TypeScript, and modern frontend development**
-- 🚀 Passionate about **performance optimization and clean UI architecture**
+- ⚛️ Specialized in **React, TypeScript & scalable UI systems**
+- 🚀 Focused on **performance optimization & clean architecture**
 - 🌱 Currently learning **Frontend System Design**
-- 🌍 Contributing to **Open Source**
+- 🌍 Active **Open Source Contributor**
 
 ---
 
 ## 🛠 Tech Stack
 
-### Frontend
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+<p align="center">
 
-### UI & Styling
-![Chakra UI](https://img.shields.io/badge/ChakraUI-319795?style=for-the-badge&logo=chakraui&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS-264de4?style=for-the-badge&logo=css3&logoColor=white)
+<img src="https://skillicons.dev/icons?i=react,ts,js,html,css,git,github,jest,figma,postman,redux,nodejs,tailwind,mui" />
 
-### Tools
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Github](https://img.shields.io/badge/Github-171515?style=for-the-badge&logo=github&logoColor=white)
+</p>
 
 ---
 
 ## 🚀 Open Source Contributions
 
-### Node.js
-- Improved documentation readability and formatting  
-- Corrected grammar and refined wording  
-- Formatted command examples in proper code blocks  
+### 🌟 Highlights
 
-🔗 PR: https://github.com/nodejs/nodejs.org/pull/8710
+- 🔹 Improved documentation & UI fixes across major OSS projects  
+- 🔹 Contributed to **freeCodeCamp, MDN Web Docs & Node.js ecosystem**  
+- 🔹 Focused on **UX improvements, readability & performance**
 
 ---
 
-### freeCodeCamp
+### 📌 freeCodeCamp
+- 🚀 Implemented **Facebook Share Feature**  
+  https://github.com/freeCodeCamp/freeCodeCamp/pull/66610  
 
-- freeCodeCamp: Implemented Facebook share feature after workshops to improve user engagement and social sharing.  
-  🔗 https://github.com/freeCodeCamp/freeCodeCamp/pull/66610
+- 🛠 Fixed **mobile UI search placeholder issue**  
+  https://github.com/freeCodeCamp/freeCodeCamp/pull/66449  
 
-**UI Fix**
-- Fixed mobile UI issue where navigation search placeholder text was clipped  
-- Added truncation with ellipsis for better responsiveness  
+- 📄 Documentation Improvements  
+  https://github.com/freeCodeCamp/freeCodeCamp/pull/66247  
 
-🔗 PR: https://github.com/freeCodeCamp/freeCodeCamp/pull/66449
+---
 
-**Documentation Improvement**
+### 📌 MDN Web Docs
+- 🛠 Fixed Django documentation issues  
+  https://github.com/mdn/content/pull/43607  
 
-🔗 PR: https://github.com/freeCodeCamp/freeCodeCamp/pull/66247
+- ✨ Improved content clarity  
+  https://github.com/mdn/content/pull/43608  
+
+---
+
+### 📌 Node.js Website
+- ✨ Enhanced documentation readability  
+- 🛠 Improved formatting & command examples  
+
+https://github.com/nodejs/nodejs.org/pull/8710  
 
 ---
 
 ## 📊 GitHub Stats
 
-![Venkat's GitHub stats](https://github-readme-stats.vercel.app/api?username=Venkat-Entropik&show_icons=true&theme=tokyonight)
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Venkat-Entropik&show_icons=true&theme=tokyonight&hide_border=true" />
+  <br/>
+  <img src="https://streak-stats.demolab.com?user=Venkat-Entropik&theme=tokyonight&hide_border=true" />
+</p>
 
 ---
 
 ## 🔥 Most Used Languages
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Venkat-Entropik&layout=compact&theme=tokyonight)
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Venkat-Entropik&layout=compact&theme=tokyonight&hide_border=true" />
+</p>
 
 ---
 
-## 📫 Connect With Me
+## 🧠 Contribution Graph
 
-- LinkedIn: https://www.linkedin.com/in/devathoti-venkata-ramana/
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Venkat-Entropik&theme=tokyo-night&hide_border=true" />
+</p>
 
 ---
 
-⭐️ From [Venkat](https://github.com/Venkat-Entropik)
+## 🤝 Connect With Me
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/devathoti-venkata-ramana/">
+    <img src="https://img.shields.io/badge/LinkedIn-Venkat-blue?style=for-the-badge&logo=linkedin" />
+  </a>
+</p>
+
+---
+
+<p align="center">
+  ⭐️ From <a href="https://github.com/Venkat-Entropik">Venkat</a>
+</p>
