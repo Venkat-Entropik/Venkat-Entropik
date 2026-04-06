@@ -106,3 +106,7 @@ https://github.com/nodejs/nodejs.org/pull/8710
 <p align="center">
   ⭐️ From <a href="https://github.com/Venkat-Entropik">Venkat</a>
 </p>
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=Venkat-Entropik&label=Profile%20views&color=0e75b6&style=flat" alt="profile views" />
+</p>
