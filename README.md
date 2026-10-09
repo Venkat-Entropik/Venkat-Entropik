@@ -10,7 +10,7 @@
 
 ## 🚀 About Me
 
-- 💻 Frontend Developer with **2.5+ years of experience**
+- 💻 Frontend Developer with **3+ years of experience**
 - ⚛️ Specialized in **React, TypeScript & scalable UI systems**
 - 🚀 Focused on **performance optimization & clean architecture**
 - 🌱 Currently learning **Frontend System Design**
