@@ -1,43 +1,225 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320">
-<style>
- .t{font-family:'Segoe UI', Inter, 'Helvetica Neue', Arial, sans-serif;font-weight:800;}
- .main{opacity:0;animation:rise 1.2s cubic-bezier(.2,.8,.2,1) .2s forwards}
- .g1{animation:gl1 5s steps(1) infinite 2s;opacity:0}
- .g2{animation:gl2 5s steps(1) infinite 2s;opacity:0}
- .sub{opacity:0;animation:fade 1s ease 1.1s forwards}
- @keyframes rise{from{opacity:0;transform:translateY(30px);letter-spacing:54px}to{opacity:1;transform:translateY(0);letter-spacing:12px}}
- @keyframes fade{to{opacity:1}}
- @keyframes gl1{0%{opacity:0}92%{opacity:.8;transform:translate(-5px,2px)}94%{opacity:.8;transform:translate(4px,-2px)}96%{opacity:0}}
- @keyframes gl2{0%{opacity:0}92%{opacity:.8;transform:translate(5px,-2px)}94%{opacity:.8;transform:translate(-4px,2px)}96%{opacity:0}}
-</style>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340">
 <defs>
- <clipPath id="r"><rect width="1200" height="320" rx="22"/></clipPath>
- <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#070b14"/><stop offset="1" stop-color="#150a26"/></linearGradient>
- <linearGradient id="tx" x1="0" y1="0" x2="1" y2="0" spreadMethod="reflect">
-  <stop offset="0" stop-color="#22d3ee"/><stop offset=".5" stop-color="#a855f7"/><stop offset="1" stop-color="#f472b6"/>
-  <animateTransform attributeName="gradientTransform" type="translate" values="0 0;1 0;0 0" dur="6s" repeatCount="indefinite"/>
- </linearGradient>
- <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse"><path d="M44 0H0V44" fill="none" stroke="#7c3aed" stroke-opacity=".18"/></pattern>
- <linearGradient id="fadeG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff" stop-opacity=".9"/></linearGradient>
- <mask id="m"><rect width="1200" height="320" fill="url(#fadeG)"/></mask>
- <filter id="blur"><feGaussianBlur stdDeviation="40"/></filter>
- <filter id="glow" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <!-- Dark bg gradient -->
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0"   stop-color="#020408"/>
+    <stop offset="0.5" stop-color="#0a0618"/>
+    <stop offset="1"   stop-color="#060d1a"/>
+  </linearGradient>
+
+  <!-- Animated gradient text fill -->
+  <linearGradient id="gtext" x1="0%" y1="0%" x2="100%" y2="0%" gradientUnits="userSpaceOnUse" x2="1200">
+    <stop offset="0%"   stop-color="#22d3ee">
+      <animate attributeName="stop-color" values="#22d3ee;#a855f7;#f472b6;#22d3ee" dur="5s" repeatCount="indefinite"/>
+    </stop>
+    <stop offset="50%"  stop-color="#a855f7">
+      <animate attributeName="stop-color" values="#a855f7;#f472b6;#22d3ee;#a855f7" dur="5s" repeatCount="indefinite"/>
+    </stop>
+    <stop offset="100%" stop-color="#f472b6">
+      <animate attributeName="stop-color" values="#f472b6;#22d3ee;#a855f7;#f472b6" dur="5s" repeatCount="indefinite"/>
+    </stop>
+  </linearGradient>
+
+  <!-- Animated border gradient -->
+  <linearGradient id="borderG" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%"   stop-color="#22d3ee"   stop-opacity="0.9">
+      <animate attributeName="stop-color" values="#22d3ee;#a855f7;#f472b6;#22d3ee" dur="6s" repeatCount="indefinite"/>
+    </stop>
+    <stop offset="100%" stop-color="#f472b6"   stop-opacity="0.9">
+      <animate attributeName="stop-color" values="#f472b6;#22d3ee;#a855f7;#f472b6" dur="6s" repeatCount="indefinite"/>
+    </stop>
+  </linearGradient>
+
+  <!-- Atmospheric blur -->
+  <filter id="atmos" x="-60%" y="-60%" width="220%" height="220%">
+    <feGaussianBlur stdDeviation="55"/>
+  </filter>
+
+  <!-- Glow: large -->
+  <filter id="glow-lg" x="-30%" y="-80%" width="160%" height="260%">
+    <feGaussianBlur stdDeviation="14" result="b1"/>
+    <feGaussianBlur stdDeviation="5"  result="b2"/>
+    <feMerge><feMergeNode in="b1"/><feMergeNode in="b2"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+
+  <!-- Glow: small -->
+  <filter id="glow-sm" x="-20%" y="-60%" width="140%" height="220%">
+    <feGaussianBlur stdDeviation="4" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+
+  <!-- Grid pattern -->
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M40 0H0V40" fill="none" stroke="rgba(99,102,241,0.10)" stroke-width="0.5"/>
+  </pattern>
+
+  <!-- Grid fade mask (top bright → bottom fade) -->
+  <linearGradient id="gridFade" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0"   stop-color="#fff"/>
+    <stop offset="0.6" stop-color="#fff" stop-opacity="0.5"/>
+    <stop offset="1"   stop-color="#fff" stop-opacity="0"/>
+  </linearGradient>
+  <mask id="gridMask">
+    <rect width="1200" height="340" fill="url(#gridFade)"/>
+  </mask>
+
+  <!-- Scanlines -->
+  <pattern id="scan" width="1" height="3" patternUnits="userSpaceOnUse">
+    <rect width="1" height="1" y="0" fill="rgba(34,211,238,0.025)"/>
+  </pattern>
+
+  <!-- Edge fade mask for marquee -->
+  <linearGradient id="edgeFade" x1="0" x2="1">
+    <stop offset="0"    stop-color="#060a12"/>
+    <stop offset="0.08" stop-color="#060a12" stop-opacity="0"/>
+    <stop offset="0.92" stop-color="#060a12" stop-opacity="0"/>
+    <stop offset="1"    stop-color="#060a12"/>
+  </linearGradient>
+
+  <!-- Clip rounded rect -->
+  <clipPath id="rr"><rect width="1200" height="340" rx="20"/></clipPath>
+
+  
 </defs>
-<g clip-path="url(#r)">
- <rect width="1200" height="320" fill="url(#bg)"/>
- <g mask="url(#m)"><rect x="0" y="-44" width="1200" height="408" fill="url(#grid)">
-  <animateTransform attributeName="transform" type="translate" values="0 0;0 44" dur="2.5s" repeatCount="indefinite"/></rect></g>
- <g filter="url(#blur)" opacity=".55">
-  <circle r="144" fill="#7c3aed"><animate attributeName="cx" values="180.0;420.0;180.0" dur="12s" repeatCount="indefinite"/><animate attributeName="cy" values="96.0;256.0;96.0" dur="10s" repeatCount="indefinite"/></circle>
-  <circle r="128" fill="#0891b2"><animate attributeName="cx" values="1020.0;720.0;1020.0" dur="14s" repeatCount="indefinite"/><animate attributeName="cy" values="224.0;64.0;224.0" dur="11s" repeatCount="indefinite"/></circle>
-  <circle r="96" fill="#db2777"><animate attributeName="cx" values="600.0;840.0;480.0;600.0" dur="16s" repeatCount="indefinite"/><animate attributeName="cy" values="288.0;160.0;288.0" dur="13s" repeatCount="indefinite"/></circle>
- </g>
- <rect width="1200" height="2" fill="#22d3ee" opacity=".25"><animate attributeName="y" values="0;320" dur="4s" repeatCount="indefinite"/></rect>
- <g class="t" text-anchor="middle" font-size="120">
-  <text class="g1" x="600.0" y="180" fill="#22d3ee" letter-spacing="12">VENKAT</text>
-  <text class="g2" x="600.0" y="180" fill="#f472b6" letter-spacing="12">VENKAT</text>
-  <g class="main"><text x="600.0" y="180" fill="url(#tx)" filter="url(#glow)" letter-spacing="12">VENKAT</text></g>
- </g>
- <text class="sub" x="600.0" y="242" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace" font-size="18" fill="#a5b4fc" letter-spacing="3">&lt;/&gt;  FRONTEND DEVELOPER  ·  REACT  ·  TYPESCRIPT  ·  OPEN SOURCE</text>
- <rect width="1200" height="320" rx="22" fill="none" stroke="url(#tx)" stroke-opacity=".6" stroke-width="2"/>
-</g></svg>
+
+<g clip-path="url(#rr)">
+  <!-- Base background -->
+  <rect width="1200" height="340" fill="url(#bg)"/>
+
+  <!-- Aurora blobs -->
+  <g filter="url(#atmos)" opacity="0.75">
+    <circle r="190" fill="#4f07b4" opacity="0.9">
+      <animate attributeName="cx" values="180;360;170;180" dur="18s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="90;230;290;90"  dur="14s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="170" fill="#0e5f8a" opacity="0.8">
+      <animate attributeName="cx" values="1060;880;1010;1060" dur="16s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="75;210;110;75"      dur="12s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="140" fill="#831843" opacity="0.65">
+      <animate attributeName="cx" values="610;720;490;610" dur="20s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="290;150;330;290" dur="15s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="100" fill="#064e3b" opacity="0.45">
+      <animate attributeName="cx" values="400;620;350;400" dur="22s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="330;190;80;330"  dur="17s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Grid -->
+  <rect width="1200" height="340" fill="url(#grid)" mask="url(#gridMask)"/>
+
+  <!-- Scanlines -->
+  <rect width="1200" height="340" fill="url(#scan)" opacity="0.7"/>
+
+  <!-- Horizontal scan beam -->
+  <rect width="1200" height="1.5" fill="white" opacity="0">
+    <animate attributeName="y"       values="-2;342"    dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.25;0.25;0" keyTimes="0;0.05;0.95;1" dur="5s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- HUD corner brackets -->
+  <g stroke-width="1.8" fill="none" opacity="0.75">
+    <path d="M22,22 L62,22 M22,22 L22,62"  stroke="#22d3ee"/>
+    <path d="M1178,22 L1138,22 M1178,22 L1178,62" stroke="#f472b6"/>
+    <path d="M22,318 L62,318 M22,318 L22,278" stroke="#a855f7"/>
+    <path d="M1178,318 L1138,318 M1178,318 L1178,278" stroke="#fbbf24"/>
+  </g>
+
+  <!-- Floating orbs -->
+  <circle cx="100" cy="55" r="3" fill="#22d3ee">
+    <animate attributeName="opacity" values="0.9;0.2;0.9" dur="2.8s" repeatCount="indefinite"/>
+    <animate attributeName="r"       values="3;5.5;3"     dur="2.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1100" cy="75" r="2.5" fill="#f472b6">
+    <animate attributeName="opacity" values="0.8;0.15;0.8" dur="3.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="55" cy="285" r="2.5" fill="#a855f7">
+    <animate attributeName="opacity" values="0.8;0.25;0.8" dur="4.0s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1145" cy="270" r="3" fill="#4ade80">
+    <animate attributeName="opacity" values="0.7;0.1;0.7" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- HUD data fragments -->
+  <g font-family="'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace" font-size="10" fill="#22d3ee" opacity="0.28">
+    <text x="35" y="52">SYS:ONLINE</text>
+    <text x="35" y="65">BUILD:3.0</text>
+    <text x="1105" y="52">FE_DEV</text>
+    <text x="1105" y="65">ORG:ETP</text>
+  </g>
+
+  <!-- Glitch cyan layer -->
+  <g opacity="0">
+    <animate attributeName="opacity"
+      values="0;0;0;0;0;0;0;0;0;0.55;0;0.35;0;0;0;0;0;0;0;0"
+      dur="8s" repeatCount="indefinite"/>
+    <text x="600" y="192" text-anchor="middle"
+      font-family="'Segoe UI', Inter, 'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="110"
+      fill="none" stroke="#22d3ee" stroke-width="0.6"
+      letter-spacing="16" transform="translate(-4,0)">VENKAT</text>
+  </g>
+
+  <!-- Glitch pink layer -->
+  <g opacity="0">
+    <animate attributeName="opacity"
+      values="0;0;0;0;0;0;0;0;0;0;0;0.45;0;0.25;0;0;0;0;0;0"
+      dur="8s" repeatCount="indefinite"/>
+    <text x="600" y="192" text-anchor="middle"
+      font-family="'Segoe UI', Inter, 'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="110"
+      fill="none" stroke="#f472b6" stroke-width="0.6"
+      letter-spacing="16" transform="translate(4,0)">VENKAT</text>
+  </g>
+
+  <!-- Hero name (animated in) -->
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1"
+      dur="1.2s" begin="0.1s" fill="freeze"
+      calcMode="spline" keySplines="0.2 0.8 0.2 1"/>
+    <text x="600" y="192" text-anchor="middle"
+      font-family="'Segoe UI', Inter, 'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="110"
+      fill="url(#gtext)" filter="url(#glow-lg)" letter-spacing="16">
+      <animateTransform attributeName="transform" type="translate"
+        from="0 32" to="0 0" dur="1.2s" begin="0.1s" fill="freeze"
+        calcMode="spline" keySplines="0.2 0.8 0.2 1"/>
+      VENKAT
+    </text>
+  </g>
+
+  <!-- Role tagline -->
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1"
+      dur="0.8s" begin="1.0s" fill="freeze"/>
+    <text x="600" y="244" text-anchor="middle"
+      font-family="'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace" font-size="17" fill="#818cf8" letter-spacing="4">
+      &lt;/&gt;  FRONTEND DEVELOPER  ·  REACT  ·  TYPESCRIPT  ·  OPEN SOURCE
+    </text>
+  </g>
+
+  <!-- "Open to work" pulse badge -->
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1"
+      dur="0.6s" begin="1.6s" fill="freeze"/>
+    <g transform="translate(490,274)">
+      <rect width="220" height="32" rx="16"
+        fill="rgba(74,222,128,0.07)"
+        stroke="#4ade80" stroke-width="1" stroke-opacity="0.65"/>
+      <!-- Pulse ring -->
+      <circle cx="18" cy="16" r="5" fill="#4ade80" opacity="0.25">
+        <animate attributeName="r"       values="5;13;5"   dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.25;0;0.25" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <!-- Solid dot -->
+      <circle cx="18" cy="16" r="5" fill="#4ade80">
+        <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <text x="34" y="21" font-family="'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace" font-size="12.5"
+        fill="#4ade80" letter-spacing="1">OPEN TO OPPORTUNITIES</text>
+    </g>
+  </g>
+
+  <!-- Border frame -->
+  <rect width="1200" height="340" rx="20"
+    fill="none" stroke="url(#borderG)" stroke-width="1.5" opacity="0.9"/>
+</g>
+</svg>

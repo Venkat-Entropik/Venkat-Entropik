@@ -1,60 +1,158 @@
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+     Venkat — GitHub Profile  ·  v5.0 Award Edition
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+
+<!-- ╔══════════════ HERO WAVE HEADER ══════════════╗ -->
+<picture>
+  <source media="(prefers-color-scheme: dark)"
+    srcset="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a0533,100:0d1117&height=200&section=header&text=Venkat&fontSize=72&fontColor=a855f7&fontAlignY=38&desc=Frontend%20Developer%20·%20React%20·%20TypeScript&descAlignY=58&descSize=18&descColor=22d3ee&animation=fadeIn" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24&height=200&section=header&text=Venkat&fontSize=72&fontAlignY=38&desc=Frontend%20Developer%20·%20React%20·%20TypeScript&descAlignY=58&descSize=18&animation=fadeIn" width="100%" alt="Venkat" />
+</picture>
+
+<!-- ╔══════════════ TYPING SUBTITLE ═══════════════╗ -->
 <p align="center">
-  <img src="./assets/header.svg" width="100%" alt="Venkat — Frontend Developer" />
+  <a href="https://github.com/Venkat-Entropik">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=2800&pause=900&color=a855f7&center=true&vCenter=true&width=520&lines=Building+pixel-perfect+UIs+%F0%9F%96%A5%EF%B8%8F;React+%2B+TypeScript+Specialist+%E2%9A%A1;Open+Source+Contributor+%F0%9F%8C%9F;Performance+%26+Accessibility+First+%F0%9F%9A%80;3%2B+Years+of+Frontend+Craft+%F0%9F%8E%AF" alt="Typing SVG" />
+  </a>
 </p>
 
+<!-- ╔══════════════ SOCIAL BADGES ══════════════════╗ -->
 <p align="center">
-  <a href="https://www.linkedin.com/in/devathoti-venkata-ramana/"><img src="https://img.shields.io/badge/LinkedIn-0a0e17?style=for-the-badge&logo=linkedin&logoColor=22d3ee&labelColor=0a0e17" /></a>
-  <a href="https://github.com/Venkat-Entropik?tab=repositories"><img src="https://img.shields.io/badge/Projects-0a0e17?style=for-the-badge&logo=github&logoColor=a855f7&labelColor=0a0e17" /></a>
-  <a href="https://github.com/Venkat-Entropik"><img src="https://komarev.com/ghpvc/?username=Venkat-Entropik&label=VIEWS&color=f472b6&style=for-the-badge&labelColor=0a0e17" /></a>
+  <a href="https://www.linkedin.com/in/devathoti-venkata-ramana/">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/Venkat-Entropik?tab=repositories">
+    <img src="https://img.shields.io/badge/Projects-181717?style=for-the-badge&logo=github&logoColor=white" alt="Projects" />
+  </a>
+  &nbsp;
+  <img src="https://komarev.com/ghpvc/?username=Venkat-Entropik&style=for-the-badge&color=a855f7&label=PROFILE+VIEWS" alt="views" />
 </p>
 
-<p align="center">
-  <img src="./assets/tech-marquee.svg" width="100%" alt="Tech stack" />
-</p>
-
-<p align="center">
-  <img src="./assets/terminal.svg" width="88%" alt="About me terminal" />
-</p>
-
-<h2 align="center">⚡ Open Source</h2>
-
-<p align="center">
-  <a href="https://github.com/freeCodeCamp/freeCodeCamp/pulls?q=is%3Apr+author%3AVenkat-Entropik"><img src="./assets/oss-freecodecamp.svg" width="32%" alt="freeCodeCamp contributions" /></a>
-  <a href="https://github.com/mdn/content/pulls?q=is%3Apr+author%3AVenkat-Entropik"><img src="./assets/oss-mdn.svg" width="32%" alt="MDN contributions" /></a>
-  <a href="https://github.com/nodejs/nodejs.org/pulls?q=is%3Apr+author%3AVenkat-Entropik"><img src="./assets/oss-nodejs.svg" width="32%" alt="Node.js contributions" /></a>
-</p>
-
-<details>
-<summary><b>📎 View every pull request</b></summary>
 <br/>
 
-| Project | Pull request |
-|---|---|
-| freeCodeCamp | [#66610 — Facebook share feature](https://github.com/freeCodeCamp/freeCodeCamp/pull/66610) |
-| freeCodeCamp | [#66449 — Mobile search placeholder fix](https://github.com/freeCodeCamp/freeCodeCamp/pull/66449) |
-| freeCodeCamp | [#66247 — Documentation improvements](https://github.com/freeCodeCamp/freeCodeCamp/pull/66247) |
-| MDN Web Docs | [#43607 — Fixed Django documentation](https://github.com/mdn/content/pull/43607) |
-| MDN Web Docs | [#43608 — Improved content clarity](https://github.com/mdn/content/pull/43608) |
-| Node.js | [#8710 — Docs readability & command examples](https://github.com/nodejs/nodejs.org/pull/8710) |
+<!-- ╔══════════════ BENTO LAYOUT ═══════════════════╗ -->
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td width="55%" valign="top">
 
-</details>
+### 🧑‍💻 &nbsp;About Me
 
-<h2 align="center">📈 Activity</h2>
+```yaml
+name    : Venkat
+located : India
+company : Entropik
+role    : Frontend Developer
+exp     : 3+ years
+
+passion :
+  - Scalable UI architecture
+  - Performance optimization
+  - Accessible, inclusive design
+  - Open source contributions
+
+currently_learning : Frontend System Design
+open_to            : New opportunities 🚀
+```
+
+</td>
+<td width="5%"></td>
+<td width="40%" valign="top">
+
+### 📊 &nbsp;This Week
+
+<!--
+  Optional: If you set up WakaTime, replace below with:
+  [![WakaTime](https://github-readme-stats.vercel.app/api/wakatime?username=YOUR_WAKATIME_USER...)]
+-->
+
+```text
+TypeScript   ██████████░░  78%
+React        ████████░░░░  62%
+CSS / SCSS   █████░░░░░░░  41%
+Testing      ████░░░░░░░░  32%
+Other        ██░░░░░░░░░░  17%
+```
+
+> 📍 &nbsp;Updated manually · setup WakaTime  
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for live stats
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+---
+
+### ⚡ &nbsp;Tech Stack
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=Venkat-Entropik&show_icons=true&include_all_commits=true&count_private=true&bg_color=0a0e17&title_color=a855f7&icon_color=22d3ee&text_color=cbd5e1&border_color=1e293b&border_radius=16" />
-  <img height="165" src="https://streak-stats.demolab.com?user=Venkat-Entropik&background=0A0E17&ring=A855F7&fire=F472B6&currStreakNum=22D3EE&sideNums=E2E8F0&currStreakLabel=A855F7&sideLabels=94A3B8&dates=64748B&stroke=1E293B&border=1E293B&border_radius=16" />
+  <img src="https://skillicons.dev/icons?i=ts,react,nextjs,redux,tailwind,mui&perline=6" alt="Core stack" />
+</p>
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=jest,vite,nodejs,git,figma,postman&perline=6" alt="Tools" />
+</p>
+
+---
+
+### 📈 &nbsp;Activity
+
+<p align="center">
+  <img width="49%"
+    src="https://github-readme-stats.vercel.app/api?username=Venkat-Entropik&show_icons=true&include_all_commits=true&count_private=true&theme=tokyonight&hide_border=true&border_radius=12&rank_icon=github"
+    alt="GitHub Stats" />
+  <img width="49%"
+    src="https://streak-stats.demolab.com?user=Venkat-Entropik&theme=tokyonight&hide_border=true&border_radius=12&date_format=j%20M%5B%20Y%5D"
+    alt="GitHub Streak" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Venkat-Entropik&bg_color=0a0e17&color=a855f7&line=22d3ee&point=f472b6&area=true&area_color=22d3ee&hide_border=true&radius=16" width="100%" />
+  <img width="100%"
+    src="https://github-readme-activity-graph.vercel.app/graph?username=Venkat-Entropik&theme=tokyo-night&hide_border=true&radius=8&area=true"
+    alt="Contribution graph" />
 </p>
 
-<!-- 3D contribution calendar — generated by .github/workflows/profile-3d.yml -->
-<p align="center">
-  <img src="./profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D contribution calendar" />
-</p>
+---
+
+### 🌍 &nbsp;Open Source
+
+<table border="0" width="100%">
+<tr>
+<td>
+
+| Project | PR | Impact |
+|---|---|---|
+| 🟢 **freeCodeCamp** | [#66610](https://github.com/freeCodeCamp/freeCodeCamp/pull/66610) Facebook share | Feature |
+| 🟢 **freeCodeCamp** | [#66449](https://github.com/freeCodeCamp/freeCodeCamp/pull/66449) Mobile search fix | Bug fix |
+| 🟢 **freeCodeCamp** | [#66247](https://github.com/freeCodeCamp/freeCodeCamp/pull/66247) Docs | Docs |
+| 🔵 **MDN Web Docs** | [#43607](https://github.com/mdn/content/pull/43607) Django docs | Fix |
+| 🔵 **MDN Web Docs** | [#43608](https://github.com/mdn/content/pull/43608) Content clarity | Docs |
+| 🟣 **Node.js** | [#8710](https://github.com/nodejs/nodejs.org/pull/8710) Readability | Docs |
+
+</td>
+</tr>
+</table>
+
+---
+
+### 🏆 &nbsp;GitHub Trophies
 
 <p align="center">
-  <img src="./assets/footer.svg" width="100%" alt="Let's build something fast & beautiful" />
+  <img src="https://github-profile-trophy.vercel.app/?username=Venkat-Entropik&theme=tokyonight&no-frame=true&no-bg=true&margin-w=8&column=6" alt="Trophies" />
 </p>
+
+---
+
+### 💬 &nbsp;Philosophy
+
+<p align="center">
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Dev Quote" />
+</p>
+
+<!-- ╔══════════════ FOOTER WAVE ════════════════════╗ -->
+<picture>
+  <source media="(prefers-color-scheme: dark)"
+    srcset="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a0533,100:0d1117&height=120&section=footer" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24&height=120&section=footer" width="100%" alt="footer" />
+</picture>

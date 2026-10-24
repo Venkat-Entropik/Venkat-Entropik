@@ -1,11 +1,54 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="390" height="210" viewBox="0 0 390 210">
-<defs><radialGradient id="g" cx="1" cy="0" r="1"><stop offset="0" stop-color="#f472b6" stop-opacity=".28"/><stop offset="1" stop-color="#f472b6" stop-opacity="0"/></radialGradient></defs>
-<rect x="2" y="2" width="386" height="206" rx="18" fill="#0a0e17" stroke="#1e293b" stroke-width="2"/>
-<rect x="2" y="2" width="386" height="206" rx="18" fill="url(#g)"/>
-<rect x="2" y="2" width="386" height="206" rx="18" fill="none" stroke="#f472b6" stroke-width="3" stroke-linecap="round" stroke-dasharray="140 1044">
- <animate attributeName="stroke-dashoffset" from="0" to="-1184" dur="4s" repeatCount="indefinite"/></rect>
-<circle cx="32" cy="40" r="7" fill="#f472b6"><animate attributeName="r" values="6;9;6" dur="2s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;.5;1" dur="2s" repeatCount="indefinite"/></circle>
-<text x="50" y="47" font-family="'Segoe UI', Inter, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="800" fill="#f8fafc">Node.js Website</text>
-<text x="24" y="78" font-family="'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace" font-size="13" fill="#f472b6">1 PULL REQUEST</text>
-<text x="24" y="108" font-family="'Segoe UI', Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15" fill="#cbd5e1"><tspan fill="#f472b6">▸ </tspan>Docs readability</text><text x="24" y="134" font-family="'Segoe UI', Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15" fill="#cbd5e1"><tspan fill="#f472b6">▸ </tspan>Formatting &amp; command examples</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="220" viewBox="0 0 390 220">
+<defs>
+  <radialGradient id="cg" cx="0.85" cy="0.1" r="0.8">
+    <stop offset="0" stop-color="#f472b6" stop-opacity="0.2"/>
+    <stop offset="1" stop-color="#f472b6" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="cbg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#0c1220"/>
+    <stop offset="1" stop-color="#08101c"/>
+  </linearGradient>
+  <filter id="cglow" x="-10%" y="-20%" width="120%" height="140%">
+    <feGaussianBlur stdDeviation="3" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+
+<rect x="2" y="2" width="386" height="216" rx="18"
+  fill="url(#cbg)" stroke="#1e2d3d" stroke-width="1.5"/>
+<rect x="2" y="2" width="386" height="216" rx="18" fill="url(#cg)"/>
+
+<!-- Animated dashed border -->
+<rect x="3" y="3" width="384" height="214" rx="17" fill="none"
+  stroke="#f472b6" stroke-width="2.5" stroke-linecap="round" opacity="0.85"
+  stroke-dasharray="100 1096">
+  <animate attributeName="stroke-dashoffset" from="0" to="-1196"
+    dur="5s" repeatCount="indefinite"/>
+</rect>
+
+<!-- Ghost border -->
+<rect x="3" y="3" width="384" height="214" rx="17" fill="none"
+  stroke="#f472b6" stroke-width="0.5" opacity="0.12"/>
+
+<!-- Logo badge -->
+<circle cx="34" cy="43" r="16" fill="#f472b6" opacity="0.12"/>
+<circle cx="34" cy="43" r="11" fill="#f472b6" opacity="0.2">
+  <animate attributeName="r"       values="10;14;10" dur="3s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.2;0.07;0.2" dur="3s" repeatCount="indefinite"/>
+</circle>
+<text x="34" y="49" text-anchor="middle"
+  font-family="'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace" font-size="11" font-weight="800"
+  fill="#f472b6" filter="url(#cglow)">NJS</text>
+
+<!-- Name -->
+<text x="60" y="38" font-family="'Segoe UI', Inter, 'Helvetica Neue', Arial, sans-serif" font-size="20"
+  font-weight="800" fill="#f1f5f9">Node.js Website</text>
+
+<!-- PR count pill -->
+<rect x="60" y="46" width="127" height="22" rx="11"
+  fill="#f472b6" opacity="0.1" stroke="#f472b6" stroke-width="0.8" stroke-opacity="0.5"/>
+<text x="70" y="61" font-family="'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace" font-size="12"
+  fill="#f472b6" letter-spacing="0.8">1 PULL REQUEST MERGED</text>
+
+<text x="22" y="106" font-family="'Segoe UI', Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14.5" fill="#cbd5e1"><tspan fill="#f472b6" font-size="12">▸ </tspan>Docs readability</text><text x="22" y="132" font-family="'Segoe UI', Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14.5" fill="#cbd5e1"><tspan fill="#f472b6" font-size="12">▸ </tspan>Formatting &amp; command examples</text>
 </svg>
